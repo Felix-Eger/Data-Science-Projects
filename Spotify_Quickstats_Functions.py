@@ -209,7 +209,7 @@ def main(json):
     '''The main function called for each json'''
 
     # setting up database connection 
-    conn = create_engine("postgresql+psycopg2://moritzdeecke:BIPM2022!@10.50.200.15:5432/spot_on")
+    conn = create_engine("postgresql://username:password!@ip-address:port/db_name")
 
     # stem episode id 
     episode_id = Path(json).stem
